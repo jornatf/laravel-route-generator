@@ -3,8 +3,8 @@
 namespace Jornatf\LaravelRouteGenerator\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Jornatf\LaravelRouteGenerator\LaravelRouteGeneratorServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

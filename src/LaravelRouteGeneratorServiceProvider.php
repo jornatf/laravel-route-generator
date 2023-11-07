@@ -2,10 +2,10 @@
 
 namespace Jornatf\LaravelRouteGenerator;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Facades\Jornatf\LaravelRouteGenerator\LaravelRouteGenerator;
 use Jornatf\LaravelRouteGenerator\Commands\LaravelRouteGeneratorCommand;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelRouteGeneratorServiceProvider extends PackageServiceProvider
 {

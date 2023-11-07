@@ -2,8 +2,8 @@
 
 namespace Jornatf\LaravelRouteGenerator;
 
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 
 class LaravelRouteGenerator
 {
@@ -55,14 +55,14 @@ class LaravelRouteGenerator
      * Create a route from a view.
      */
     protected function createRouteFromView(string $pathView): void
-    {   
+    {
         $name = $this->viewName($pathView);
 
         $viewName = $routeName = "$this->viewBasePath.$name";
 
         Route::get($name, function () use ($viewName) {
-                return view($viewName);
-            })->name($routeName);
+            return view($viewName);
+        })->name($routeName);
     }
 
     /**
@@ -71,7 +71,7 @@ class LaravelRouteGenerator
     protected function viewName(string $pathView): string
     {
         $filename = pathinfo($pathView, PATHINFO_FILENAME);
-        
+
         return Str::beforeLast($filename, '.blade');
     }
 }
